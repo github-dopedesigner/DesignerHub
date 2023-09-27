@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="facebook.css">
+    <link rel="icon" type="image/x-icon" href="Images/Fav.ico">
+</head>
+
+<body>
+
+    <div class="main-content">
+
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-lg-6">
+                        <div class="content align-items-center">
+                            <div style="padding-left: 120px;">
+                                <img src="Images/dF5SId3UHWd.svg" alt="logo">
+                                <h1>
+                                    Facebook helps you connect and share with the people in your life.
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="content align-items-end ps-5 ms-3">
+                            <div>
+                            <div style="width: 400px;" class="login-form">
+                                <form>
+                                    <div class="form-group row">
+                                      <div class="col-sm-10 col-lg-12">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email address or phone number">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row" style="padding: 12px 0 20px 0;">
+                                      <div class="col-sm-10 col-lg-12">
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                      </div>
+                                    </div>
+                                   
+                                    <div class="form-group row">
+                                      <div class="col-sm-10 col-lg-12">
+                                        <button type="submit"class="btn w-100" onclick="myFunction()">Log in</button>
+                                      </div>
+                                    </div>
+                                  </form>
+
+                                  <div class="form-footer">
+                                    <div class="link">
+                                        <p id="Wrong" style="color: #eb2d2d;"></p>
+                                        <img id="loading" style="display: none;" src="Images/monkey-gif-6.gif" alt="loading">
+                                        <a href="#">Forgotten password?</a>
+                                    </div>
+                                    <hr>
+                                    <button class="btn">Create new account</button>
+                                  </div>
+                            </div>
+                            
+                            <div class="text">
+                                <a href="#">Create a Page</a>
+                                 for a celebrity, brand or business.
+                              </div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+    <script>
+      function myFunction() {
+        a = "admin";
+        b = "password";
+        let x = document.getElementById("inputEmail3").value;
+        let y = document.getElementById("inputPassword3").value;
+        setTimeout(() => { if(x == a && y == b || event.key === "Enter"){
+          document.getElementById("loading").style.display = "block";
+          setTimeout(function () {
+          window.location.href = "myaccount.html";
+        }, 6590);
+        }else{
+          document.getElementById("Wrong").innerHTML = "You entered wrong password";
+        } }, 0);
+        
+      }
+//       alert('Hello');
+// setTimeout(() => { alert('World!'); }, 5000);
+// alert('Goodbye!');
+     
+      </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

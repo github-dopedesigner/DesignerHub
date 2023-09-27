@@ -1,0 +1,142 @@
+/* body{
+background: #1f2223;
+box-sizing: border-box;
+} */
+body{
+    background: #1f2223;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 120px;
+  }
+  
+  /* Track */
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #454a4d; 
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: #575e62; 
+  }
+
+  ::-webkit-scrollbar-corner{
+    background-color: #181a1b;
+  }
+
+/* a:active,button:active{
+    display: none;
+} */
+.main-content{
+    height: 120vh;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.content{
+    height: 535px;
+    display: flex;
+    color: #fff;
+}
+
+.content img{
+    width: 301px;
+}
+
+.content h1{
+    color: #d5d1cc;
+    font-size: 28px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.login-form{
+    background: #181a1b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 15px #0002;
+    position: relative;
+}
+
+.login-form input{
+    font-size: 17px;
+    padding: 14px 16px;
+    border-radius: 4px;
+    background: transparent;
+    color: #d2cec8 !important;
+    border-color: #393e40;
+}
+
+.login-form ::placeholder{
+    color: #d2cec8;
+    opacity: .5;
+}
+
+.login-form input:focus{
+    background-color: transparent;
+    border-color: #1351a0;
+    box-shadow: none;
+}
+
+.login-form .row button{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #0b57bb;
+    color: #fff;
+}
+.login-form .row button:hover{
+    background-color: #0b57bb;
+}
+
+.link{
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+.link a{
+    color: #2d96f3;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+.form-footer{
+    text-align: center;
+}
+.form-footer button{
+    background-color: #359222;
+    font-size: 17px;
+    font-family: Helvetica;
+    color: #e8e6e3;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+.form-footer button:hover{
+    background-color: #359222;
+}
+
+.text{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #D5d1cc;
+}
+.text a{
+    text-decoration: none;
+    color: #D5d1cc;
+    font-weight: bold;
+}
+.text a:hover{
+    text-decoration: underline;
+}
